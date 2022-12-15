@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Freelance Artist Studio</title>
+  <title>CJ Creative Studio</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <style>
-    /* Custom styles for this template */
+    /* Custom styles for this template https://source.unsplash.com/1600x900/?art */
     .jumbotron {
-      background-image: url('https://source.unsplash.com/1600x900/?art');
+      background-image: url('assets/top-bg.png');
       background-size: cover;
       background-position: center;
     /* background-color: #343a40; */
-      color: white;
+      color: #9a98f2;
     }
     .jumbotron h1 {
       font-size: 2rem;
@@ -23,34 +24,47 @@
       top: 0;
       z-index: 1;
     }
+    img.avatar {
+  	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+    }
+    img.gallery {
+	border-radius: 10%;
+	width: 300px;
+	height: 200px;
+    }
+    .centered {
+	text-align: center;
+    }
+    
   </style>
 </head>
 <body>
   <div class="jumbotron jumbotron-fluid text-center">
     <div class="container">
-      <h1 class="display-4">Freelance Artist Studio</h1>
-      <p class="lead">Welcome to the online portfolio of a freelance artist. Browse through our gallery to see some of our recent works.</p>
+      <h1 class="display-4">CJ Creative Studio</h1>
+      <p class="lead">Welcome to the online portfolio of a CJ Creative Studio. Browse through our gallery to see some of our recent works.</p>
     </div>
   </div>
-
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Freelance Artist Studio</a>
+    <a class="navbar-brand" href="index">CJ Creative Studio</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#About">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Gallery</a>
+          <a class="nav-link" href="/gallery">Gallery</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="/contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -66,21 +80,63 @@
         <h2>Gallery</h2>
         <p>Here are some of our recent works:</p>
         <div class="row">
-          <div class="col-md-4">
-            <img src="https://via.placeholder.com/300x200" class="img-fluid" alt="Placeholder image">
+          <div class="col-md-6">
+            <img class="gallery" src="https://via.placeholder.com/300x200" class="img-fluid" alt="Placeholder image">
             <p>Portrait of a young girl</p>
           </div>
-          <div class="col-md-4">
-            <img src="https://via.placeholder.com/300x200" class="img-fluid" alt="Placeholder image">
+          <div class="col-md-6">
+            <img class="gallery" src="https://via.placeholder.com/300x200" class="img-fluid" alt="Placeholder image">
             <p>Seascape at sunset</p>
           </div>
-          <div class="col-md-4">
-            <img src="https://via.placeholder.com/300x200" class="img-fluid" alt="Placeholder image">
+          <div class="col-md-5">
+            <img class="gallery" src="https://via.placeholder.com/300x200" class="img-fluid" alt="Placeholder image">
             <p>Abstract geometric shapes</p>
           </div>
+	    <div class="col-md-5"
         </div>
+	  <p><b>View our full gallery <a href="/gallery">here</a></b></p>
       </div>
     </div>
   </div>
+
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md">
+	<h2>Our Motto</h2>
+      <div class="col col-lg-6 mb-4 mb-lg-0">
+        <figure class="bg-white p-3 rounded" style="border-left: .25rem solid #a34e78;">
+          <blockquote class="blockquote pb-2">
+            <p>
+              Art is anything you need that you doesn't already exist.
+            </p>
+          </blockquote>
+          <figcaption class="blockquote-footer mb-0 font-italic">
+            CJ
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10">
+	<h1 class="centered">Meet the Team</h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+	<h2>CJ</h2>
+	<h3>Founder and Leader of CJ Creative Studios</h3>
+      <img class="avatar" src="assets/cj.png" alt="CJ">
+	<p>CJ is a self taught artist. He uses both traditional and digital mediums. He first started art when he had to do a reduced Game Development Unit for one of his GCSE subjects, where he started doing pixel art.</p>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
