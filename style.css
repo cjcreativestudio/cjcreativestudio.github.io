@@ -1,0 +1,41 @@
+    /* Custom styles for this template https://source.unsplash.com/1600x900/?art */
+    .jumbotron {
+      background-image: url('assets/top-bg.png');
+      background-size: cover;
+      background-position: center;
+    /* background-color: #343a40; */
+      color: #9a98f2;
+    }
+    .jumbotron h1 {
+      font-size: 2rem;
+    }
+    .jumbotron p {
+      font-size: 1.5rem;
+    }
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+    img.avatar {
+  	  border-radius: 50%;
+	    width: 200px;
+	    height: 200px;
+    }
+    img.gallery {
+	    border-radius: 10%;
+	    width: 300px;
+	    height: 200px;
+    }
+    .centered {
+	    text-align: center;
+    }
+    footer {
+      background-image: assets/top-bg.png;
+    }
+    card.title {
+      color: #ffffff;
+    }
+    card.subtitle {
+      color: #ffffff;
+    }
