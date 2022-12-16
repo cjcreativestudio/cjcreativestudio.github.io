@@ -1,17 +1,63 @@
 <html>
     <head>
-      <link href="https://cdn.jsdelivr.net/npm/daisyui@2.45.0/dist/full.css" rel="stylesheet" type="text/css" />
-      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
-
+      <title>CJ's Portfolio | CJ Creative Studio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+    .jumbotron {
+      background-image: url('../assets/top-bg.png');
+      background-size: cover;
+      background-position: center;
+    /* background-color: #343a40; */
+      color: #9a98f2;
+    }
+    .jumbotron h1 {
+      font-size: 2rem;
+    }
+    .jumbotron p {
+      font-size: 1.5rem;
+    }
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+    img.avatar {
+  	  border-radius: 50%;
+	    width: 200px;
+	    height: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 6px;
+    }
+    img.gallery {
+	    border-radius: 10%;
+	    width: 300px;
+	    height: 200px;
+    }
+    .centered {
+	    text-align: center;
+    }
+    </style>
     </head>
     <body>
-        <div class="card w-96 bg-base-100 shadow-xl">
-        <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+        <div class="jumbotron jumbotron-fluid text-center">
+            <div class="container">
+                <h1 class="display-4">CJ</h1>
+                <p class="lead">This is CJ's Portfolio, </p>
+            </div>
+        </div>
+        <div class="container">
+            <h1>About</h1>
+            <p>CJ is a self taught artist. He uses both traditional and digital mediums. He first started art when he had to do a reduced Game Development Unit for one of his GCSE subjects, where he started doing pixel art.</p>
+        </div>
+        <div class="card w-25 bg-base-100 shadow-xl">
+        <figure><img src="https://cdna.artstation.com/p/assets/images/images/047/808/652/large/charlie-baker-drawing-tablet.jpg?1648494484" alt="3D Render of a Drawing Tablet" style="width: 400px"/></figure>
         <div class="card-body">
-        <h2 class="card-title">Shoes!</h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <h2 class="card-title">UGEE M708 V3</h2>
+        <p>3D Render of a UGEE M708 V3 drawing tablet, made in Blender.</p>
         <div class="card-actions justify-end">
-        <button class="btn btn-primary">Buy Now</button>
         </div>
         </div>
         </div>
